@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Teaching</title>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="image-third">
+    <img src="img/blurry.png" alt="Description of the image" class="cover-img">
+    <div class="profile-info">
+      <img src="img/andrei2.png" alt="Your Name" class="profile-img">
+      <h2 class="h2-name">Foidas Andrei</h2>
+      <p>Professional Idiot</p>
+    </div>
+  </div>
+
+  <div class="text-two-thirds">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="teaching.html">TEACHING</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h1>Teaching</h1>
+
+      <div class="teaching-list">
+        <h2 onclick="toggleContent('oop')">
+          <span class="toggle-icon"><i class="fas fa-plus"></i></span> Object Oriented Programming
+        </h2>
+        <div class="teaching-list active" id="oop" style="display: none;">
+          <li class="teaching-item">
+            <div class="teaching-icon">
+              <i class="fa-solid fa-person-chalkboard"></i>
+              <h3>Teams</h3>
+            </div>
+            <div class="teaching-content">
+              <p>Teams Code: hji89a</p>
+            </div>
+          </li>
+          <li class="teaching-item">
+            <div class="teaching-icon">
+              <i class="fas fa-calendar-days"></i>
+              <h3>Timetable</h3>
+            </div>
+            <div class="teaching-content">
+              <p><a href="https://www.cs.ubbcluj.ro/files/orar/2022-2/disc/MLE5006.html">View timetable</a></p>
+            </div>
+          </li>
+          <li class="teaching-item">
+            <div class="teaching-icon">
+              <i class="fas fa-circle-exclamation"></i>
+              <h3>Important Information</h3>
+            </div>
+            <div class="teaching-content">
+              <p>You will find all the lectures, assignments and information on the Course's Teams Channel (find code above).</p>
+              <p>Laboratory attendance is mandatory. But you can switch groups if it suits you better or for emergencies,
+                just make sure to announce one day in advance.</p>
+              <p>For each missed deadline, there will be a 1 point deduction from the max score. </p>
+            </div>
+          </li>
+          <li class="teaching-item">
+            <div class="teaching-icon">
+              <i class="fas fa-link"></i>
+              <h3>Useful Links</h3>
+            </div>
+            <div class="teaching-content">
+              <p><a href="https://sites.google.com/view/iuliana-bocicor/home">Course Site</a></p>
+              <p><a href="https://www.programiz.com/cpp-programming/oop">Introduction</a></p>
+            </div>
+          </li>
+        </div>
+      </div>
+
+      <div class="teaching-list">
+        <h2 onclick="toggleContent('sdi')">
+          <span class="toggle-icon"><i class="fas fa-plus"></i></span> Systems for Design and Implementation</h2>
+        <div class="teaching-list active" id="sdi" style="display: none;">
+          <li class="teaching-item">
+            <div class="teaching-icon">
+              <i class="fa-solid fa-person-chalkboard"></i>
+              <h3>Teams</h3>
+            </div>
+            <div class="teaching-content">
+              <p>Teams Code: ag67hd2</p>
+            </div>
+          </li>
+          <li class="teaching-item">
+            <div class="teaching-icon">
+              <i class="fas fa-calendar-days"></i>
+              <h3>Timetable</h3>
+            </div>
+            <div class="teaching-content">
+              <p><a href="https://www.cs.ubbcluj.ro/files/orar/2022-2/disc/MLE5013.html">View timetable</a></p>
+            </div>
+          </li>
+          <li class="teaching-item">
+            <div class="teaching-icon">
+              <i class="fas fa-circle-exclamation"></i>
+              <h3>Important Information</h3>
+            </div>
+            <div class="teaching-content">
+              <p>You will find all the lectures, assignments and information on the Course's Teams Channel (find code above).</p>
+              <p>Laboratory attendance is mandatory. But you can switch groups if it suits you better or for emergencies,
+                just make sure to announce one day in advance.</p>
+              <p>For each missed deadline, there will be a 2 point deduction from the max score. </p>
+            </div>
+          </li>
+          <li class="teaching-item">
+            <div class="teaching-icon">
+              <i class="fas fa-link"></i>
+              <h3>Useful Links</h3>
+            </div>
+            <div class="teaching-content">
+              <p><a href="https://angular.io/tutorial/tour-of-heroes">Angular Introduction</a></p>
+            </div>
+          </li>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

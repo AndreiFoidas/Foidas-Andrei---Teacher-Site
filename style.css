@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(255, 245, 240, 0.9);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.image-third {
+    flex: 1;
+    max-width: 33.33%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgba(255, 245, 240, 0.9);
+    z-index: 1;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.h2-name {
+    margin-bottom: 1px;
+}
+
+.text-two-thirds {
+    flex: 2;
+    max-width: 66.66%;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 245, 240, 0.9);
+}
+
+.hobbies-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hobby {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hobby .hobby-icon {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.hobby .hobby-icon i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.hobby h3 {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.hobby-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hobby p {
+    margin: 5px;
+}
+
+.menu {
+    margin-top: 5px;
+    text-align: right;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 15px; /* Adjusted spacing between menu items */
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.content-section {
+    margin-top: 30px; /* Adjusted spacing between sections */
+}
+
+.content-section h2 {
+    color: black;
+}
+
+.content-section p {
+    font-size: 16px;
+    margin: 10px 0; /* Adjusted spacing between paragraphs */
+}
+
+.lab-list {
+    list-style: none;
+    padding: 0;
+}
+
+.lab-list li {
+    margin-bottom: 10px;
+}
+
+.lab-icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.teaching-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px; /* Adjust space between teaching lists */
+}
+
+.teaching-list:not(:last-child) {
+    border-bottom: 2px solid #333; /* Adjust color as needed */
+}
+.teaching-item {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.teaching-item .teaching-icon {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.teaching-item .teaching-icon i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.teaching-item h2 {
+    color: black;
+    font-size: 20px; /* Adjusted font size for teaching item title */
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.teaching-list h2 {
+    color: black;
+    font-size: 20px; /* Adjusted font size for teaching list title */
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+
+.teaching-item .teaching-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.teaching-item .teaching-content p {
+    margin: 5px;
+}
+
+.teaching-list h2 {
+    color: black;
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-icon {
+    margin-right: 5px;
+    transition: transform 0.3s;
+}
+
+.teaching-list.active h2 .toggle-icon {
+    transform: rotate(45deg);
+}
+
+/* Media query for screens with a maximum width of 600 pixels (typical for mobile devices) */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-third,
+    .text-two-thirds {
+        max-width: 100%;
+        flex: none;
+    }
+
+    .image-third {
+        max-height: 50vh;
+        position: relative;
+    }
+
+    .profile-info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 20px;
+        z-index: 1;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 5px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        text-align: center;
+        margin-top: 15px; /* Adjusted spacing between menu and text */
+    }
+
+    .menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content-section {
+        margin-top: 20px; /* Adjusted spacing between sections */
+    }
+}
+
+/* Additional styles for larger screens */
+@media only screen and (min-width: 601px) {
+    .profile-info {
+        font-size: 24px;
+    }
+}
