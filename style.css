@@ -220,6 +220,27 @@ body {
     transform: rotate(45deg);
 }
 
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.contact-list p {
+    font-size: 16px;
+    margin: 0;
+}
+
 /* Media query for screens with a maximum width of 600 pixels (typical for mobile devices) */
 @media only screen and (max-width: 600px) {
     .container {
