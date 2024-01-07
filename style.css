@@ -62,6 +62,50 @@ body {
     background-color: rgba(255, 245, 240, 0.9);
 }
 
+.about-me-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about-me {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-me .about-me-icon {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about-me .about-me-icon i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.about-me h3 {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+}
+
+.about-me-content p {
+    margin-top: 5px;
+}
+
+.about-me p {
+    margin: 5px !important;
+}
+
 .hobbies-list {
     list-style: none;
     padding: 0;
@@ -114,7 +158,7 @@ body {
 
 .menu li {
     display: inline-block;
-    margin-left: 15px; /* Adjusted spacing between menu items */
+    margin-left: 15px;
 }
 
 .menu a {
@@ -125,7 +169,7 @@ body {
 }
 
 .content-section {
-    margin-top: 30px; /* Adjusted spacing between sections */
+    margin-top: 30px;
 }
 
 .content-section h2 {
@@ -133,8 +177,8 @@ body {
 }
 
 .content-section p {
-    font-size: 16px;
-    margin: 10px 0; /* Adjusted spacing between paragraphs */
+    font-size: 18px;
+    text-align: justify;
 }
 
 .lab-list {
@@ -144,21 +188,22 @@ body {
 
 .lab-list li {
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .lab-icon {
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .teaching-list {
     list-style: none;
     padding: 0;
-    margin-bottom: 20px; /* Adjust space between teaching lists */
+    margin-bottom: 20px;
 }
 
 .teaching-list:not(:last-child) {
-    border-bottom: 2px solid #333; /* Adjust color as needed */
+    border-bottom: 2px solid #333;
 }
 .teaching-item {
     margin-bottom: 10px;
@@ -180,14 +225,14 @@ body {
 
 .teaching-item h2 {
     color: black;
-    font-size: 20px; /* Adjusted font size for teaching item title */
+    font-size: 20px;
     margin-bottom: 0;
     margin-top: 5px;
 }
 
 .teaching-list h2 {
     color: black;
-    font-size: 20px; /* Adjusted font size for teaching list title */
+    font-size: 20px;
     margin-top: 2px;
     margin-bottom: 8px;
 }
@@ -242,7 +287,7 @@ body {
 }
 
 /* Media query for screens with a maximum width of 600 pixels (typical for mobile devices) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     .container {
         flex-direction: column;
         height: auto;
@@ -283,7 +328,7 @@ body {
 
     .menu {
         text-align: center;
-        margin-top: 15px; /* Adjusted spacing between menu and text */
+        margin-top: 15px;
     }
 
     .menu li {
@@ -292,7 +337,7 @@ body {
     }
 
     .content-section {
-        margin-top: 20px; /* Adjusted spacing between sections */
+        margin-top: 20px;
     }
 }
 
