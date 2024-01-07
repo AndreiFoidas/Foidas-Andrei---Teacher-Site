@@ -62,6 +62,39 @@ body {
     background-color: rgba(255, 245, 240, 0.9);
 }
 
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgba(255, 245, 240, 0.9);
+    font-size: 24px;
+}
+
+.social-icons i {
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover i {
+    color: #e6602c;
+}
+
+.social-icons .label {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 12px;
+}
+
+.social-icons a:hover .label {
+    opacity: 1;
+}
+
 .about-me-list {
     list-style: none;
     padding: 0;
@@ -168,6 +201,10 @@ body {
     font-size: 16px;
 }
 
+.menu a:hover {
+    color: #e6602c;
+}
+
 .content-section {
     margin-top: 30px;
 }
@@ -237,6 +274,11 @@ body {
     margin-bottom: 8px;
 }
 
+.teaching-list h2:hover {
+    text-decoration: underline;
+}
+
+
 .teaching-item .teaching-content {
     display: flex;
     flex-direction: column;
@@ -286,6 +328,16 @@ body {
     margin: 0;
 }
 
+.content-section a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #630c4b;
+}
+
+.content-section a:hover {
+    text-decoration: underline;
+}
+
 /* Media query for screens with a maximum width of 600 pixels (typical for mobile devices) */
 @media only screen and (max-width: 650px) {
     .container {
@@ -297,6 +349,13 @@ body {
     .text-two-thirds {
         max-width: 100%;
         flex: none;
+    }
+
+    .cover-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
     }
 
     .image-third {
@@ -328,7 +387,7 @@ body {
 
     .menu {
         text-align: center;
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
     .menu li {
@@ -338,6 +397,29 @@ body {
 
     .content-section {
         margin-top: 20px;
+    }
+
+    .h2-name {
+        margin-top: 5px;
+        font-size: 18px;
+    }
+
+    .social-icons {
+        margin-top: 3px;
+    }
+
+    .p-title {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .social-icons .label {
+        margin-top: 2px;
+    }
+
+    .profile-info {
+        padding: 0px;
     }
 }
 
